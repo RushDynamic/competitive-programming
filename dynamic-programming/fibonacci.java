@@ -14,7 +14,6 @@ class fibonacci {
             return resultMap.get(n);
         else
             resultMap.put(n, calculateFib(n - 1, resultMap) + calculateFib(n - 2, resultMap));
-        // return (calculateFib(n - 1, resultMap) + calculateFib(n - 2, resultMap));
         return resultMap.get(n);
     }
 }
